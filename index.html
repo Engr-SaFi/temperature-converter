@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width,initial-scale=10">
+    <meta name="description"    
+      content="A modern and responsive Celsius and Fahrenheit temperature converter built with HTML, CSS and JavaScript."  >
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <main class="container">
+    <section class="converter-card">
+      <div class="header">        
+        <div class="temperature-icon">
+          🌡
+        </div>        
+        <h1>Temperature Converter</h1>        
+        <p>Convert Celsius and Fahrenheit quickly and easily</p>
+      </div>
+      <!-- Celsius to Fahrenheit -->      
+      <div class="converter-box">        
+        <h2>Celsius → Fahrenheit</h2>        
+        <label for="celsiusInput">          
+          Enter Celsius       
+        <label>
+        <div class="input-group">          
+          <input type="number" id="celsiusInput" placeholder="eg25" step="any">
+          <span>°C</span>        
+        </div>
+        <button id="celsiusBtn">          
+          Convert to Fahrenheit        
+        </button>
+        <div class="result" id="celsiusResult">          
+          Result will appear here        
+        </div>
+      </div>
+      <!-- Fahrenheit to Celsius -->      
+      <div class="converter-box">        
+        <h2>Fahrenheit → Celsius</h2>        
+        <label for="fahrenheitInput">          
+          Enter Fahrenheit        
+        </label>
+        <div class="input-group">          
+          <input type="number" id="fahrenheitInput" placeholder="e.g. 77" step="any">
+          <span>°F</span>        
+        </div>
+        <button id="fahrenheitBtn">
+          Convert to Celsius
+        </button>
+        <div class="result" id="fahrenheitResult">          
+          Result will appear here        
+        </div>
+      </div>
+      <button class="reset-btn" id="resetBtn">        
+        Reset      
+      </button>
+      <footer>        
+        <p>Built with HTML, CSS & JavaScript</p>      
+      </footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body> 
+</html> 
